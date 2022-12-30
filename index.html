@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Kiama Kia Ma</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <!-- <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css"/> -->
+        <script src="scripts/index.js" defer></script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-size: 150%;
+                background-color: #A9A9A9;
+            }
+            header {
+                background-color: #FFE4E1;
+                padding: 1.5% 2%;
+            }
+            h2 {
+                font-size: 70%;
+                color:cadetblue
+            }
+            main {
+                max-width: 70%;
+                margin: 0 0 0 2%;
+            }
+            section {
+                background-color: bisque;
+                margin: 2% 0;
+                padding: .8% 1%;
+            }
+            .shamba-container {
+                background-color: #BC8F8F;
+                padding: 1%;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 2%;
+            }
+            section img {
+                width: 100%;
+            }
+            .shamba-details {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+            }
+            .shamba-details aside {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+            }
+            .shamba-details p {
+                margin-top: 60%;
+            }
+            aside span {
+                margin: .9% 0;
+                font-size: 120%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Mashamba</h1>
+            <h2>In need of land or property contact us.</h2>
+        </header>
+        <main>
+            <section>
+                <!-- filter section -->
+                Filtering section.
+            </section>
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.jpg" alt="">
+                    </div>
+                    <div class="shamba-details">
+                        <aside>
+                            <span>Kshs 2,000,000</span>
+                            <span>Isinya</span>
+                            <span>9 Km from main road</span>
+                            <span>Additional info</span>
+                        </aside>
+                        <p><a href="#">Contacts Us</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
