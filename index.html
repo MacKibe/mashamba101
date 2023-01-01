@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Kiama Kia Ma</title>
+        <title>Mashamba</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <!-- <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css"/> -->
         <script src="scripts/index.js" defer></script>
@@ -69,6 +69,31 @@
             <section>
                 <!-- filter section -->
                 Filtering section.
+                <!-- <form id="filter-form">
+                    <h3>Filters:</h3>
+                    <label for="color-red">Red</label>
+                    <input type="checkbox" id="color-red" value="red" name="color">
+                    <br>
+                    <label for="color-blue">Blue</label>
+                    <input type="checkbox" id="color-blue" value="blue" name="color">
+                    <br>
+                    <label for="size-small">Small</label>
+                    <input type="checkbox" id="size-small" value="small" name="size">
+                    <br>
+                    <label for="size-large">Large</label>
+                    <input type="checkbox" id="size-large" value="large" name="size">
+                    <br>
+                    <button type="submit">Apply Filters</button>
+                    <button type="reset" id="reset-button">Reset Filters</button>
+                  </form>
+                  
+                  <div id="products">
+                    <div class="product" data-color="red" data-size="small">Red Small Product</div>
+                    <div class="product" data-color="red" data-size="large">Red Large Product</div>
+                    <div class="product" data-color="blue" data-size="small">Blue Small Product</div>
+                    <div class="product" data-color="blue" data-size="large">Blue Large Product</div>
+                  </div> -->
+                  
             </section>
             <section class="mashamba-container">
                 <div class="shamba-container">
@@ -87,5 +112,43 @@
                 </div>
             </section>
         </main>
+        <!-- <script>
+            const form = document.querySelector('#filter-form');
+            const resetButton = document.querySelector('#reset-button');
+            const products = document.querySelectorAll('.product');
+
+            form.addEventListener('submit', applyFilters);
+            resetButton.addEventListener('click', resetFilters);
+
+            function applyFilters(event) {
+            event.preventDefault();
+
+            // Get selected filters from form
+            const filters = {};
+            const formData = new FormData(form);
+            for (const [name, value] of formData.entries()) {
+                filters[name] = value;
+            }
+
+            // Filter products
+            products.forEach(product => {
+                product.style.display = 'none';
+                for (const [name, value] of Object.entries(filters)) {
+                if (product.dataset[name] === value) {
+                    product.style.display = 'block';
+                    break;
+                }
+                }
+            });
+            }
+
+            function resetFilters() {
+            form.reset();
+            products.forEach(product => {
+                product.style.display = 'block';
+            });
+            }
+
+        </script> -->
     </body>
 </html>
