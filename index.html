@@ -10,54 +10,92 @@
                 padding: 0;
                 box-sizing: border-box;
             }
+
             body {
                 font-size: 150%;
-                background-color: #A9A9A9;
+                background-color: #ffffff;
+                background-image: url("./images/pic2.jpg");
+                background-blend-mode: multiply;
+                background-attachment: fixed;
+                background-size: cover;
             }
+
             header {
-                background-color: #FFE4E1;
+                background-color: #59504f;
                 padding: 1.5% 2%;
+                color: aliceblue;
+                position: fixed;
+                width: 100%;
+                top: 0;
             }
+
             h2 {
                 font-size: 70%;
-                color:cadetblue
+                color:rgb(168, 168, 168)
             }
+
             main {
                 max-width: 70%;
                 margin: 0 0 0 2%;
+                margin-top: 9%;
             }
-            section {
-                background-color: bisque;
+
+            section:not(.contact-us) {
+                background-color: #BCAAA4;
                 margin: 2% 0;
                 padding: .8% 1%;
             }
+
+            .contact-us img {
+                width: 4%;
+                cursor: pointer;
+                background-color: #ffffff;
+                margin: 20%s;
+            }
+
+            .contact-us label,input {
+                display: block;
+            }
+
             .shamba-container {
-                background-color: #BC8F8F;
                 padding: 1%;
                 display: grid;
                 grid-template-columns: 1fr 2fr;
                 gap: 2%;
             }
+
             section img {
                 width: 100%;
             }
+
             .shamba-details {
                 display: grid;
                 grid-template-columns: 2fr 1fr;
             }
+
             .shamba-details aside {
                 display: flex;
                 flex-direction: column;
                 align-self: center;
             }
-            .shamba-details p {
-                margin-top: 60%;
-            }
+
             aside span {
                 margin: .9% 0;
                 font-size: 120%;
             }
 
+            a {
+                /* color: white; */
+            }
+
+            @media (max-width: 768px){
+                body {
+                font-size: 100%;
+                }
+                main {
+                    width: 100%;
+                }
+            }
         </style>
     </head>
     <body>
@@ -66,34 +104,20 @@
             <h2>In need of land or property contact us.</h2>
         </header>
         <main>
-            <section>
-                <!-- filter section -->
-                Filtering section.
-                <!-- <form id="filter-form">
-                    <h3>Filters:</h3>
-                    <label for="color-red">Red</label>
-                    <input type="checkbox" id="color-red" value="red" name="color">
-                    <br>
-                    <label for="color-blue">Blue</label>
-                    <input type="checkbox" id="color-blue" value="blue" name="color">
-                    <br>
-                    <label for="size-small">Small</label>
-                    <input type="checkbox" id="size-small" value="small" name="size">
-                    <br>
-                    <label for="size-large">Large</label>
-                    <input type="checkbox" id="size-large" value="large" name="size">
-                    <br>
-                    <button type="submit">Apply Filters</button>
-                    <button type="reset" id="reset-button">Reset Filters</button>
-                  </form>
-                  
-                  <div id="products">
-                    <div class="product" data-color="red" data-size="small">Red Small Product</div>
-                    <div class="product" data-color="red" data-size="large">Red Large Product</div>
-                    <div class="product" data-color="blue" data-size="small">Blue Small Product</div>
-                    <div class="product" data-color="blue" data-size="large">Blue Large Product</div>
-                  </div> -->
-                  
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.jpg" alt="">
+                    </div>
+                    <div class="shamba-details">
+                        <aside>
+                            <span>85 acres</span>
+                            <span>Kshs 2,000,000</span>
+                            <span>Isinya</span>
+                            <span>9 Km from main road</span>
+                        </aside>
+                    </div>
+                </div>
             </section>
             <section class="mashamba-container">
                 <div class="shamba-container">
@@ -102,53 +126,106 @@
                     </div>
                     <div class="shamba-details">
                         <aside>
-                            <span>Kshs 2,000,000</span>
-                            <span>Isinya</span>
-                            <span>9 Km from main road</span>
-                            <span>Additional info</span>
+                            <span>200 acres</span>
+                            <span>Kshs 2,500,000</span>
+                            <span>Umma</span>
+                            <span>2.5 Km from main road</span>
                         </aside>
-                        <p><a href="#">Contacts Us</a></p>
                     </div>
                 </div>
             </section>
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.jpg" alt="">
+                    </div>
+                    <div class="shamba-details">
+                        <aside>
+                            <span>180 acres</span>
+                            <span>Kshs 3,000,000</span>
+                            <span>Umma</span>
+                            <span>3 Km from main road</span>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.jpg" alt="">
+                    </div>
+                    <div class="shamba-details">
+                        <aside>
+                            <span>10 acres</span>
+                            <span>Kshs 1,500,000</span>
+                            <span>Savia</span>
+                            <span>10 Km from main road</span>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.jpg" alt="">
+                    </div>
+                    <div class="shamba-details">
+                        <aside>
+                            <span>12 acres</span>
+                            <span>Kshs 3,000,000</span>
+                            <span>Birika</span>
+                            <span>4 Km from main road</span>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.jpg" alt="">
+                    </div>
+                    <div class="shamba-details">
+                        <aside>
+                            <span>4(1/8) plots</span>
+                            <span>Kshs 3,500,000</span>
+                            <span>Matasia</span>
+                            <span>2 Km from main road</span>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.jpg" alt="">
+                    </div>
+                    <div class="shamba-details">
+                        <aside>
+                            <span>3(1/4) plots</span>
+                            <span>Kshs 5,000,000</span>
+                            <span>Kiserian</span>
+                            <span>4 Km from main road</span>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-us">
+                <span>Contact Us <a onclick="showcontactform()"><img src="./images/phone.svg" alt=""></a></span>
+            </section>
+            <!-- <div class="contactform" id="contactform">
+                <form>
+                  <label for="name">
+                    Name:
+                    <input type="text" id="username" placeholder="Name">
+                  </label>
+                  <label for="number">
+                    Phone Number:
+                    <input type="number" id="number" placeholder="Phone Number">
+                  </label>
+                  <button type="submit" value="Submit">Submit</button>
+                  <button onclick="hideLoginForm()">Cancel</a></button>
+                </form> 
+            </div> -->
         </main>
-        <!-- <script>
-            const form = document.querySelector('#filter-form');
-            const resetButton = document.querySelector('#reset-button');
-            const products = document.querySelectorAll('.product');
-
-            form.addEventListener('submit', applyFilters);
-            resetButton.addEventListener('click', resetFilters);
-
-            function applyFilters(event) {
-            event.preventDefault();
-
-            // Get selected filters from form
-            const filters = {};
-            const formData = new FormData(form);
-            for (const [name, value] of formData.entries()) {
-                filters[name] = value;
-            }
-
-            // Filter products
-            products.forEach(product => {
-                product.style.display = 'none';
-                for (const [name, value] of Object.entries(filters)) {
-                if (product.dataset[name] === value) {
-                    product.style.display = 'block';
-                    break;
-                }
-                }
-            });
-            }
-
-            function resetFilters() {
-            form.reset();
-            products.forEach(product => {
-                product.style.display = 'block';
-            });
-            }
-
-        </script> -->
     </body>
 </html>
