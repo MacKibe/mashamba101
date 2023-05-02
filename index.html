@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -367,4 +368,376 @@
             </section>
         </main>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mashamba</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <!-- <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css"/> -->
+        <!-- <script src="scripts/index.js" defer></script> -->
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #6993c9e0;
+                background-image: url("./images/pic3.jpg");
+                background-blend-mode: multiply;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                //
+            }
+
+            header {
+                background-color: #946a64;
+                padding: 1% 2%;
+                color: aliceblue;
+                position: fixed;
+                width: 100%;
+                top: 0;
+            }
+
+            h1 {
+                font-size: 250%;
+            }
+
+            h2 {
+                font-size: 70%;
+                letter-spacing: .32rem;
+                color: #f4fdaf;
+            }
+            
+            strong {
+                background-color: #dddddd;
+                padding: .5% .4%;
+                color: black;
+            }
+
+            .animated-sentence {
+                animation: animate-sentence 20s linear infinite;
+                color: #fff;
+                text-decoration: underline;
+                margin-top: -.8%;
+                letter-spacing: .5rem;
+            }
+
+            @keyframes animate-sentence {
+                from {
+                    transform: translateX(-20%);
+                }
+                to {
+                    transform: translateX(100%);
+                }
+            }
+
+            main {
+                max-width: 50%;
+                margin: 0 0 0 2%;
+                margin-top: 7%;
+            }
+
+            section {
+                background-color: #DCEDC8;
+                margin: 2.5% 0;
+                padding: 1%;
+            }
+
+            .mashamba-container {
+                box-shadow: 14px 18px 10px -3px rgba(0, 0, 0, 0.467);
+            }
+            
+            .shamba-container {
+                padding: 1%;
+                display: grid;
+                grid-template-columns: 1.2fr 1fr;
+                gap: 1%;
+            }
+
+            .photo-container {
+                background-color: #a8a8a8;
+            }
+            
+            img {
+                width: 100%;
+                height: 250px;
+            }
+
+            .shamba-details {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+            }
+
+            table {
+                font-size: 160%;
+            }
+            
+            td {
+                padding: 2%;
+            }
+
+            .label {
+                /* white-space: nowrap; */
+                background-color: #946a64b1;
+                color: white;
+                font-weight: 700;
+                padding: 2%;
+                text-align: right;
+            }
+
+            /* For mobile screens */
+            @media screen and (max-width: 767px){
+
+                body {
+                    font-size: 100%;
+                }
+                
+                h2 {
+                    font-size: 50%; 
+                }
+
+                .animated-sentence {
+                    animation: animate-sentence 5s linear infinite;
+                    color: #fff;
+                    text-decoration: underline;
+                    /*margin-top: -.8%;*/
+                }
+                
+                @keyframes animate-sentence {
+                from {
+                    transform: translateX(-100%);
+                }
+                to {
+                    transform: translateX(100%);
+                }
+            }
+                main {
+                    max-width: 90%;
+                    margin: 0 auto;
+                    margin-top: 25%;
+                }
+
+                section {
+                    margin: 10% 0;
+                }
+
+                img {
+                    width: 100%;
+                    height: 180px;
+                }
+                .shamba-container {
+                    display: block;
+                }
+
+                .mini-photo-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    gap: 2%;
+                }
+
+                table {
+                    font-size: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="animated-sentence">
+                <span>
+                    Contant us on Tel: <strong>+25425564376</strong> Email:
+                </span></div>
+            <h1>Mashamba</h1>
+            <h2>In need of land or property contact us.</h2>
+        </header>
+
+        <main>
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.webp" alt="">
+                    </div>
+                    <table class="shamba-details">
+                        <tr>
+                            <td class="label">Size:</td>
+                            <td>85 acres</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Cost:</td>
+                            <td>Kshs 2,000,000</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Location:</td>
+                            <td>Isinya</td>
+                        </tr>
+                        <tr>
+                            <td class="label">More Info:</td>
+                            <td>9 Km from main road</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.jpg" alt="">
+                    </div>
+                    <table class="shamba-details">
+                        <tr>
+                            <td class="label">Size:</td>
+                            <td>200 acres</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Cost:</td>
+                            <td>Kshs 2,500,000</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Location:</td>
+                            <td>Umma</td>
+                        </tr>
+                        <tr>
+                            <td class="label">More Info:</td>
+                            <td>2.5 Km from main road</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic7.jpg" alt="">
+                </div>
+                <table class="shamba-details">
+                    <tr>
+                        <td class="label">Size:</td>
+                        <td>150 acres</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Cost:</td>
+                        <td>Kshs 3,000,000</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Location:</td>
+                        <td>Umma</td>
+                    </tr>
+                    <tr>
+                        <td class="label">More Info:</td>
+                        <td>3 Km from main road</td>
+                    </tr>
+                </table>
+                </div>
+            </section>
+
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.jpg" alt="">
+                </div>
+                <table class="shamba-details">
+                    <tr>
+                        <td class="label">Size:</td>
+                        <td>10 acres</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Cost:</td>
+                        <td>Kshs 1,500,000</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Location:</td>
+                        <td>Savia</td>
+                    </tr>
+                    <tr>
+                        <td class="label">More Info:</td>
+                        <td>10 Km from main road</td>
+                    </tr>
+                </table>
+                </div>
+            </section>
+
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic7.jpg" alt="">
+                    </div>
+                    <table class="shamba-details">
+                        <tr>
+                            <td class="label">Size:</td>
+                            <td>12 acres</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Cost:</td>
+                            <td>Kshs 3,000,000</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Location:</td>
+                            <td>Birika</td>
+                        </tr>
+                        <tr>
+                            <td class="label">More Info:</td>
+                            <td>4 Km from main road</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic1.jpg" alt="">
+                    </div>
+                    <table class="shamba-details">
+                        <tr>
+                            <td class="label">Size:</td>
+                            <td>4(!/8) acres</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Cost:</td>
+                            <td>Kshs 3,500,000</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Location:</td>
+                            <td>Matasia</td>
+                        </tr>
+                        <tr>
+                            <td class="label">More Info:</td>
+                            <td>2 Km from main road</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="mashamba-container">
+                <div class="shamba-container">
+                    <div class="photo-container">
+                        <img src="./images/pic7.jpg" alt="">
+                    </div>
+                    <table class="shamba-details">
+                        <tr>
+                            <td class="label">Size:</td>
+                            <td>3(1/4) acres</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Cost:</td>
+                            <td>Kshs 5,000,000</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Location:</td>
+                            <td>Kiserian</td>
+                        </tr>
+                        <tr>
+                            <td class="label">More Info:</td>
+                            <td>4 Km from main road</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </body>
+>>>>>>> origin
 </html>
